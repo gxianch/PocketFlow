@@ -5,7 +5,7 @@ async def stream_llm(messages):
     client = AsyncOpenAI(api_key=os.environ.get("OPENAI_API_KEY", "your-api-key"))
     
     stream = await client.chat.completions.create(
-        model="gpt-4o-mini",
+        model="gpt-3.5-turbo",
         messages=messages,
         stream=True,
         temperature=0.7

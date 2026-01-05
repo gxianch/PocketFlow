@@ -1,3 +1,16 @@
+
+# 安装全局依赖
+```
+# 创建虚拟环境
+pip install -e .
+(base) 192:PocketFlow (develop*) source .venv/bin/activate
+# 安装指定包
+(.venv) (base) 192:PocketFlow (develop*) $ .venv/bin/pip install faiss-cpu
+# 执行
+python cookbook/pocketflow-chat/main.py
+```
+
+
 <div align="center">
   <img src="https://github.com/The-Pocket/.github/raw/main/assets/title.png" alt="Pocket Flow – 100-line minimalist LLM framework" width="600"/>
 </div>
